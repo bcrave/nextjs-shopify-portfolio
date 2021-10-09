@@ -3,7 +3,6 @@
 html,
 body {
   --color-bg-toggle: #ececec;
-  height: 4000px; /* delete later. just to test scrolling */
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -12,6 +11,7 @@ body {
   color: var(--color-text-primary);
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
+  /* overflow: hidden; */
 }
 
 body[data-theme="light"] {
@@ -28,6 +28,11 @@ body[data-theme="dark"] {
 }
 body::-webkit-scrollbar {
   display: none;
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
 }
 
 a {

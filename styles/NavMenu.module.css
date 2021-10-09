@@ -1,0 +1,12 @@
+.navMenu {
+  position: fixed;
+  top: 60%;
+  left: 40%;
+  width: 100%;
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}

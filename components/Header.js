@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.left}>
-        Brendon
+        brendon
         <br />
-        Crave
+        crave
       </div>
       <div className={styles.right}>
         <ThemeToggle id={styles.button} />
