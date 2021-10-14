@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@100;300;400&display=swap");
 
 html,
 body {
@@ -11,20 +11,23 @@ body {
   color: var(--color-text-primary);
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  /* overflow: hidden; */
 }
 
 body[data-theme="light"] {
   --color-text-primary: #1f1f1f;
+  --color-text-secondary: #ececec;
   --color-bg-primary: white;
   --color-bg-progress-bar: rgba(31, 31, 31, 0.2);
   --color-bg-progress: rgb(31, 31, 31);
+  --color-bg-feature-card: #1f1f1f;
 }
 body[data-theme="dark"] {
   --color-text-primary: #ececec;
+  --color-text-secondary: #1f1f1f;
   --color-bg-primary: #1f1f1f;
   --color-bg-progress-bar: rgba(250, 250, 250, 0.2);
   --color-bg-progress: rgb(250, 250, 250);
+  --color-bg-feature-card: #ececec;
 }
 body::-webkit-scrollbar {
   display: none;

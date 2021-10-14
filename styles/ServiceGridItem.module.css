@@ -1,0 +1,8 @@
+.gridItem {
+  background-color: var(--color-bg-progress-bar);
+  color: var(--color-bg-progress);
+
+  padding: 0 10px;
+  padding-top: 15px;
+  border-radius: 4px;
+}

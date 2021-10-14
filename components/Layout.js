@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import ProgressBar from "../components/ProgressBar";
 import NavMenu from "../components/NavMenu";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 const Layout = ({ children }) => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       <ProgressBar scrollValue={scrollValue} />
       {children}
       <NavMenu />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
