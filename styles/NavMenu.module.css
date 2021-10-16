@@ -10,3 +10,7 @@
   flex-direction: row-reverse;
   justify-content: space-around;
 }
+
+.active {
+  text-decoration: line-through;
+}

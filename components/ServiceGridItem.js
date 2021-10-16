@@ -9,11 +9,11 @@ const ServiceGridItem = ({
 }) => {
   return (
     <div className={styles.gridItem}>
-      <div class={`grid-item grid-item-${itemNumber}`}>
+      <div className={`grid-item grid-item-${itemNumber}`}>
         <span className={styles.iconSpan}>{faIcon}</span>
-        <div class="service-text">
-          <h3 class="service-title">{serviceTitle}</h3>
-          <p class="service-description">{serviceDescription}</p>
+        <div className="service-text">
+          <h3 className="service-title">{serviceTitle}</h3>
+          <p className="service-description">{serviceDescription}</p>
         </div>
       </div>
     </div>

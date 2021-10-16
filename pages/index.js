@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+
 import styles from "../styles/Home.module.css";
 import ServiceGrid from "../components/ServiceGrid";
 import ServiceGridItem from "../components/ServiceGridItem";
@@ -10,7 +12,7 @@ import {
   faStore,
   faSun,
   faTachometerAlt,
-  faToolbox,
+  faPlug,
   faUniversity,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -30,7 +32,7 @@ export default function Home() {
           <br />
           Developer
         </h1>
-        <div className={styles.servicesHeader}>
+        <div className={styles.hero}>
           <p className={styles.p}>
             Photo by{" "}
             <a href="https://unsplash.com/@georgecoletrain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -42,7 +44,16 @@ export default function Home() {
             </a>
           </p>
         </div>
-        <h2 className={styles.h2}>Shopify Expert</h2>
+        <div className={styles.callToAction}>
+          <h2 className={styles.h2}>Shopify Expert</h2>
+          <p>Looking to improve your Shopify site or build your first?</p>
+          <Link href="/contact">
+            <a>
+              <button className={styles.button}>Get in Touch!</button>
+            </a>
+          </Link>
+        </div>
+        <h2 className={styles.h2}>Services Include</h2>
         <ServiceGrid>
           <ServiceGridItem
             itemNumber="1"
@@ -79,9 +90,7 @@ export default function Home() {
           />
           <ServiceGridItem
             itemNumber="5"
-            faIcon={
-              <FontAwesomeIcon className={styles.icon} icon={faToolbox} />
-            }
+            faIcon={<FontAwesomeIcon className={styles.icon} icon={faPlug} />}
             serviceTitle="App Integration"
             serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
           />

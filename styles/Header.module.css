@@ -6,8 +6,11 @@
   height: 94px;
   background-color: var(--color-bg-primary);
   transition: background-color 0.5s ease-in-out;
+  position: static;
+}
 
-  position: fixed;
+.header__hidden {
+  top: -50%;
 }
 
 .left {

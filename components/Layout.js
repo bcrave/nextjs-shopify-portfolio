@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import ProgressBar from "../components/ProgressBar";
 import NavMenu from "../components/NavMenu";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 const Layout = ({ children }) => {
   const [scrollValue, setScrollValue] = useState(0);
@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
     window.addEventListener("scroll", () => {
       setScrollValue(window.scrollY);
     });
+
     return () => {
       window.removeEventListener("scroll", () => {
         console.log("removed event listener");
@@ -21,11 +22,11 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <div className="layout">
-      <Header />
+      <Header scrollValue={scrollValue} />
       <ProgressBar scrollValue={scrollValue} />
       {children}
       <NavMenu />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
