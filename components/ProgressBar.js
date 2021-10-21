@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import { LayoutContext } from "../contexts/LayoutContext";
 const getScrollPercentage = (scrollValue) => {
   return Math.floor(
     (scrollValue / (document.body.scrollHeight - window.innerHeight)) * 100
   );
 };
 
-const ProgressBar = ({ scrollValue }) => {
+const ProgressBar = () => {
+  const { scrollValue } = useContext(LayoutContext);
+
   const [scrollPercentage, setScrollPercentage] = useState(0);
+
   useEffect(() => {
     setScrollPercentage(getScrollPercentage(scrollValue));
     const progress = document.querySelector(".progress");

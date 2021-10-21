@@ -6,7 +6,10 @@
 .main {
   height: 80%;
   width: 70%;
-  /* margin-top: 100px; */
+}
+
+.main__fixedHeader {
+  margin-top: 94px;
 }
 
 .h1 {
