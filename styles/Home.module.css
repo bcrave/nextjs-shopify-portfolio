@@ -44,6 +44,22 @@
   margin: 70px 0;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons .button {
+  padding-inline: 20px;
+}
+
+.buttons #buttonTwo {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-progress-bar);
+  border-radius: 4px;
+  color: var(--color-bg-progress);
+}
+
 .h2 {
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -62,7 +78,7 @@
   border-radius: 4px;
   padding: 10px 0;
   cursor: pointer;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .button:active {
   transform: scale(0.98);

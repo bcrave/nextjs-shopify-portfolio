@@ -1,0 +1,12 @@
+.footer {
+  padding: 20px 15px 10px 15px;
+  margin-top: 40px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+.p {
+  margin: 0;
+  font-size: 12px;
+}

@@ -52,62 +52,99 @@ export default function Home() {
         <div className={styles.callToAction}>
           <h2 className={styles.h2}>Shopify Expert</h2>
           <p>Looking to improve your Shopify site or build your first?</p>
-          <Link href="/contact">
-            <a>
-              <button className={styles.button}>Get in Touch!</button>
-            </a>
-          </Link>
+          <div className={styles.buttons}>
+            <Link href="/contact">
+              <a>
+                <button className={styles.button} id={styles.buttonOne}>
+                  Get in Touch
+                </button>
+              </a>
+            </Link>
+            <Link href="/myWork">
+              <a>
+                <button className={styles.button} id={styles.buttonTwo}>
+                  See My Work
+                </button>
+              </a>
+            </Link>
+          </div>
         </div>
-        <h2 className={styles.h2}>Services Include</h2>
-        <ServiceGrid>
-          <ServiceGridItem
-            itemNumber="1"
-            faIcon={<FontAwesomeIcon className={styles.icon} icon={faStore} />}
-            serviceTitle="Store Setup"
-            serviceDescription="Get your e-commerce store up and running. Simply tell me what you like and I'll do the rest."
-          />
-          <ServiceGridItem
-            itemNumber="2"
-            faIcon={
-              <FontAwesomeIcon className={styles.icon} icon={faPeopleCarry} />
-            }
-            serviceTitle="Migration to Shopify"
-            serviceDescription="You like Shopify but already have a site on another platform?  No worries.  I make migration easy."
-          />
-          <ServiceGridItem
-            itemNumber="3"
-            faIcon={
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faDraftingCompass}
-              />
-            }
-            serviceTitle="Theme Customization"
-            serviceDescription="Love the theme you have, but need a personal touch?  Perfect.  I love writing code."
-          />
-          <ServiceGridItem
-            itemNumber="4"
-            faIcon={
-              <FontAwesomeIcon className={styles.icon} icon={faTachometerAlt} />
-            }
-            serviceTitle="Optimization"
-            serviceDescription="Get seen sooner in search results, decrease loading time, and increase conversions."
-          />
-          <ServiceGridItem
-            itemNumber="5"
-            faIcon={<FontAwesomeIcon className={styles.icon} icon={faPlug} />}
-            serviceTitle="App Integration"
-            serviceDescription="There are a lot of cool apps out there.  Let me set them up for you."
-          />
-          <ServiceGridItem
-            itemNumber="6"
-            faIcon={
-              <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
-            }
-            serviceTitle="Education"
-            serviceDescription="As a store owner, you like to be independent.  I'll pass on my knowledge to help you stay in full control."
-          />
-        </ServiceGrid>
+        <div className={styles.services}>
+          <h2 className={styles.h2}>Services Include</h2>
+          <ServiceGrid>
+            <ServiceGridItem
+              itemNumber="1"
+              faIcon={
+                <FontAwesomeIcon className={styles.icon} icon={faStore} />
+              }
+              serviceTitle="Store Setup"
+              serviceDescription="Get your e-commerce store up and running. Simply tell me what you like and I'll do the rest."
+            />
+            <ServiceGridItem
+              itemNumber="2"
+              faIcon={
+                <FontAwesomeIcon className={styles.icon} icon={faPeopleCarry} />
+              }
+              serviceTitle="Migration to Shopify"
+              serviceDescription="You like Shopify but already have a site on another platform?  No worries.  I make migration easy."
+            />
+            <ServiceGridItem
+              itemNumber="3"
+              faIcon={
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={faDraftingCompass}
+                />
+              }
+              serviceTitle="Theme Customization"
+              serviceDescription="Love the theme you have, but need a personal touch?  Perfect.  I love writing code."
+            />
+            <ServiceGridItem
+              itemNumber="4"
+              faIcon={
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={faTachometerAlt}
+                />
+              }
+              serviceTitle="Optimization"
+              serviceDescription="Get seen sooner in search results, decrease loading time, and increase conversions."
+            />
+            <ServiceGridItem
+              itemNumber="5"
+              faIcon={<FontAwesomeIcon className={styles.icon} icon={faPlug} />}
+              serviceTitle="App Integration"
+              serviceDescription="There are a lot of cool apps out there.  Let me set them up for you."
+            />
+            <ServiceGridItem
+              itemNumber="6"
+              faIcon={
+                <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
+              }
+              serviceTitle="Education"
+              serviceDescription="As a store owner, you like to be independent.  I'll pass on my knowledge to help you stay in full control."
+            />
+          </ServiceGrid>
+          <div className={styles.callToAction}>
+            <p>Let's make something together!</p>
+            <div className={styles.buttons}>
+              <Link href="/contact">
+                <a>
+                  <button className={styles.button} id={styles.buttonOne}>
+                    Get in Touch
+                  </button>
+                </a>
+              </Link>
+              <Link href="/myWork">
+                <a>
+                  <button className={styles.button} id={styles.buttonTwo}>
+                    See My Work
+                  </button>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
