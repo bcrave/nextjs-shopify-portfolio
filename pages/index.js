@@ -64,7 +64,7 @@ export default function Home() {
             itemNumber="1"
             faIcon={<FontAwesomeIcon className={styles.icon} icon={faStore} />}
             serviceTitle="Store Setup"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="Get your e-commerce store up and running. Simply tell me what you like and I'll do the rest."
           />
           <ServiceGridItem
             itemNumber="2"
@@ -72,7 +72,7 @@ export default function Home() {
               <FontAwesomeIcon className={styles.icon} icon={faPeopleCarry} />
             }
             serviceTitle="Migration to Shopify"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="You like Shopify but already have a site on another platform?  No worries.  I make migration easy."
           />
           <ServiceGridItem
             itemNumber="3"
@@ -83,7 +83,7 @@ export default function Home() {
               />
             }
             serviceTitle="Theme Customization"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="Love the theme you have, but need a personal touch?  Perfect.  I love writing code."
           />
           <ServiceGridItem
             itemNumber="4"
@@ -91,13 +91,13 @@ export default function Home() {
               <FontAwesomeIcon className={styles.icon} icon={faTachometerAlt} />
             }
             serviceTitle="Optimization"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="Get seen sooner in search results, decrease loading time, and increase conversions."
           />
           <ServiceGridItem
             itemNumber="5"
             faIcon={<FontAwesomeIcon className={styles.icon} icon={faPlug} />}
             serviceTitle="App Integration"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="There are a lot of cool apps out there.  Let me set them up for you."
           />
           <ServiceGridItem
             itemNumber="6"
@@ -105,7 +105,7 @@ export default function Home() {
               <FontAwesomeIcon className={styles.icon} icon={faUniversity} />
             }
             serviceTitle="Education"
-            serviceDescription="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+            serviceDescription="As a store owner, you like to be independent.  I'll pass on my knowledge to help you stay in full control."
           />
         </ServiceGrid>
       </main>
