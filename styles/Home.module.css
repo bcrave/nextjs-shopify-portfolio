@@ -60,6 +60,14 @@
   color: var(--color-bg-progress);
 }
 
+.socialLinks {
+  margin-top: 40px;
+}
+
+.socialLinks .a {
+  margin-right: 20px;
+}
+
 .h2 {
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -95,4 +103,28 @@
 
 .icon {
   width: 30px;
+}
+
+.aboutLink {
+  width: 100%;
+  text-align: center;
+  transition: letter-spacing 0.5s ease;
+}
+
+.aboutLink:hover {
+  letter-spacing: 1.2rem;
+}
+
+.aboutLink .aboutMe {
+  margin: 0;
+  font-size: 40px;
+}
+
+.aboutLink .learnMore {
+  margin: 0;
+}
+
+.socialLinks .icon {
+  width: 40px;
+  margin-right: 10px;
 }

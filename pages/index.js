@@ -9,6 +9,7 @@ import ServiceGrid from "../components/ServiceGrid";
 import ServiceGridItem from "../components/ServiceGridItem";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
   faDraftingCompass,
   faPeopleCarry,
@@ -143,6 +144,34 @@ export default function Home() {
                 </a>
               </Link>
             </div>
+            <div className={styles.socialLinks}>
+              <a
+                className={styles.a}
+                href="https://www.linkedin.com/in/brendon-crave/"
+                target="_blank"
+              >
+                <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+              </a>
+              <a
+                className={styles.a}
+                href="https://github.com/bcrave"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  icon={faGithubSquare}
+                />
+              </a>
+            </div>
+          </div>
+          <div className={styles.aboutLink}>
+            <Link href="/about">
+              <a>
+                <span className={styles.aboutMe}>About Me</span>
+                <br />
+                <span className={styles.learnMore}>Learn more</span>
+              </a>
+            </Link>
           </div>
         </div>
       </main>

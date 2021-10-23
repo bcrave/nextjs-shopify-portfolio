@@ -29,10 +29,12 @@ const NavMenu = () => {
           </a>
         </Link>
       </div>
-      <div className={router.pathname === "/resume" ? `${styles.active}` : ""}>
-        <Link href="/resume">
+      <div
+        className={router.pathname === "/portfolio" ? `${styles.active}` : ""}
+      >
+        <Link href="/portfolio">
           <a className={styles.navItem}>
-            <p className={styles.p}> resume</p>
+            <p className={styles.p}>portfolio</p>
           </a>
         </Link>
       </div>
